@@ -1,0 +1,18 @@
+<import src="news-item-template/news-item-template.wxml" />
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}} 
+interval="{{interval}}" circular="circular">
+   <block wx:for="{{imgUrls}}">
+      <swiper-item>
+          <image src='{{item.img_path}}'></image>
+          <text>{{item.text}}</text>
+      </swiper-item>
+   </block>
+</swiper>
+
+
+<block wx:for="{{TNewsData}}">
+  <view catchtap="onNewsTap" data-newsId= "{{item.newsId}}">
+   <template is="news-item" data="{{...item}}"/>
+  </view>
+</block>                                           

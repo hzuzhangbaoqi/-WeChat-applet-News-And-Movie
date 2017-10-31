@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/news/news",
+    "pages/movie/movie",
+    "pages/index/index",
+    "pages/news/news-detail/news-detail",
+    "pages/movie/movie-detail/movie-detail",
+    "pages/movie/movie-more/movie-more"
+  ],
+  "window": {
+    "navigationBarTitleText": "新闻与电影",
+    "backgroundTextStyle": "drak",
+    "backgroundColor": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻",
+        "iconPath": "/images/tab/news.png",
+        "selectedIconPath": "/images/tab/news_hl.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ]
+  }
+}

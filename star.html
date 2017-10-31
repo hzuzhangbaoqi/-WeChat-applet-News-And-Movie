@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var subjects=[
+            {
+                title:"1",
+                img:"123",
+                stars:50,
+                score:7.8
+            },
+            {
+                title:"1",
+                img:"123",
+                stars:50,
+                score:7.8
+            },
+            {
+                title:"1",
+                img:"123",
+                stars:50,
+                score:7.8
+            },
+            {
+                title:"1",
+                img:"123",
+                stars:50,
+                score:7.8
+            }
+        ]
+        function  toArray() {
+            var num=stars.toString().substring(0,1);
+            var arr={};
+            for(var i=1;i<=num;i++){
+                if(i<=num){
+                    arr.push(1);
+                }else{
+                    arr.push(0);
+                }
+            }
+        }
+        for(var index in subjects){
+            subjects[index].stars=toArray(subjects[index].stars);
+        }
+
+    </script>
+</body>
+</html>
